@@ -11,6 +11,16 @@ class FMatrix
   def initialize (*args)
     if (args.length == 2)
       setup_with_dims(args[0], args[1])
+
+      # below we're basically re-writing what's in each_with_index except we're passing matrix instead of element
+      # For performacne reasons we don't just want to pass block around.
+      if block_given?
+        @fm.each_with_index do |el, index|
+          yield self, get_row_from_index(index), get_col_from_index(index)
+        end
+      end
+
+
     elsif (args.length == 1)
       setup_with_rows(args[0])
     end
@@ -105,20 +115,32 @@ class FMatrix
 
 
   ##
+  # Gets the row corresponding to the given index in our internal array-based representation of the matrix.
+  def get_row_from_index (idx)
+    (idx/@cols).floor
+  end
+  private :get_row_from_index
+
+  ##
+  # Gets the column corresponding to the given index in our internal array-based representation of the matrix.
+  def get_col_from_index(idx)
+    idx%cols
+  end
+
+
+  ##
   # Returns a new matrix that is the transpose of this matrix.
   def transpose
-    raise NotImplementedError
+    FMatrix.new(@cols, @rows) do |matrix, row, col|
+      matrix.set!(row, col, self.get(col, row))
+    end
   end
 
   ##
   # Transposes this matrix (mutates the current object)
   def transpose!
-
+    raise NotImplementedError
   end
-
-
-
-
 
 
   ###############################################################
@@ -163,7 +185,8 @@ class FMatrix
     raise NotImplementedError
   end
 
-
+  ##
+  # Equality check.
   def ==(other_obj)
     return false unless other_obj.class == FMatrix && other_obj.rows == self.rows && other_obj.cols == self.cols
     for i in 0 ... @fm.length do
@@ -172,6 +195,21 @@ class FMatrix
 
     return true
   end
+
+
+  ###############################################################
+  # ITERATORS
+
+  ##
+  # Iterates through each item in the matrix, supplying the element, row and column to block.
+  def each_with_index
+    if block_given?
+      @fm.each_with_index do |el, index|
+        yield el, get_row_from_index(index), get_col_from_index(index)
+      end
+    end
+  end
+
 
 
   ###############################################################

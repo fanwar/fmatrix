@@ -4,8 +4,8 @@
     <list default="true" id="7af1b0d8-176f-42f1-9ef3-285dc20d7fad" name="Default" comment="" />
     <ignored path="fmatrix.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fmatrix.rb" changelist="7af1b0d8-176f-42f1-9ef3-285dc20d7fad" time="1382061296395" ignored="false" />
-    <file path="/test_fmatrix.rb" changelist="7af1b0d8-176f-42f1-9ef3-285dc20d7fad" time="1382061147340" ignored="false" />
+    <file path="/fmatrix.rb" changelist="7af1b0d8-176f-42f1-9ef3-285dc20d7fad" time="1382665003467" ignored="false" />
+    <file path="/test_fmatrix.rb" changelist="7af1b0d8-176f-42f1-9ef3-285dc20d7fad" time="1382665317876" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,22 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fmatrix.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/fmatrix.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="5" selection-start="3163" selection-end="3163" vertical-scroll-proportion="1.45">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test_fmatrix.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_fmatrix.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="28" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#840#2225#0" expanded="false" />
-              </folding>
+            <state line="171" column="4" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,6 +38,15 @@
         <entry file="file://$PROJECT_DIR$/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="89" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fmatrix.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/fmatrix.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="135" column="7" selection-start="3871" selection-end="3871" vertical-scroll-proportion="0.5">
               <folding />
             </state>
           </provider>
@@ -64,8 +62,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/test_fmatrix.rb" />
         <option value="$PROJECT_DIR$/lib/fmatrix.rb" />
+        <option value="$PROJECT_DIR$/test/test_fmatrix.rb" />
       </list>
     </option>
   </component>
@@ -178,8 +176,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.255931" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16514954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25552666" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16449934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -255,6 +253,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/test_fmatrix.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="4" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="89" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
@@ -262,18 +267,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_fmatrix.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="28" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#840#2225#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/fmatrix.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="5" selection-start="3163" selection-end="3163" vertical-scroll-proportion="1.45">
+        <state line="135" column="7" selection-start="3871" selection-end="3871" vertical-scroll-proportion="0.5">
           <folding />
         </state>
       </provider>

@@ -71,6 +71,27 @@ class FMatrixTest < Test::Unit::TestCase
     assert_equal(4, FMatrix.new(TEST_MATRIX3).cols)
     assert_equal(4, FMatrix.new(TEST_MATRIX4).rows)
     assert_equal(2, FMatrix.new(TEST_MATRIX4).cols)
+
+
+    #Try creating a matrix by providing rows/columns and then a block to initialize values.
+    fm8 = FMatrix.new(2, 2) do |matrix, row, col|
+      matrix.set!(row, col, row+col)
+    end
+
+    fm8.each_with_index do |el, row, col|
+      assert_equal(el, row+col)
+    end
+
+
+    fm9 = FMatrix.new(120, 10) do |matrix, row, col|
+      matrix.set!(row, col, row*10)
+    end
+
+    fm9.each_with_index do |el, row, col|
+      assert_equal(el, row*10)
+    end
+
+
         
   end
 
@@ -146,7 +167,11 @@ class FMatrixTest < Test::Unit::TestCase
   end
 
   def test_transpose
-    puts "Not yet implemented!"
+    fm0_transpose = FMatrix.new([[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]])
+
+    assert_equal(fm0_transpose, @fm0.transpose)
+    assert_equal(@fm1.transpose, FMatrix.new([[1, 2, 3]]))
+    assert_equal(@fm2.transpose, @fm2)
   end
 
 
